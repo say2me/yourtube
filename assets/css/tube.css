@@ -1,0 +1,56 @@
+body {
+  padding-top: 0;
+}
+.search-block .form-search .search-query {
+  width: 200px;
+}
+.search-block .result {
+  margin: 0;
+}
+.search-block .more {
+  display: none;
+}
+.playlist {
+  margin: 0;
+}
+.video.playing {
+  background: #CCFFCC;
+}
+.video.added {
+  opacity: 0.6;
+}
+.video:hover {
+  background-color: #f7f7f8;
+}
+.video:hover .remove {
+  display: block;
+}
+.video .remove {
+  display: none;
+}
+.video img {
+  cursor: pointer;
+}
+.video h4 {
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+}
+.video .by,
+.video .view_count {
+  color: #7c7c7c;
+  font-size: 11px;
+  line-height: 16px;
+  display: block;
+}
+.video .thumb {
+  position: relative;
+}
+.video .thumb .duration {
+  top: 68px;
+  background: #000;
+  color: #FFF;
+  padding: 2px;
+  position: absolute;
+  font-size: 12px;
+}

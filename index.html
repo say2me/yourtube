@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Workday's soundtrack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/tube.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+</head>
+
+<body>
+<div class="container" id="tube">
+    <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="#">About</a></li>
+        </ul>
+        <h3 class="muted">vasenin.com/tube</h3>
+    </div>
+    <hr>
+    <div class="row-fluid">
+        <div class="span7 right-block">
+            <div class="player-block" id="tube-player">
+                <div id="ytapiplayer">
+                    Waiting for videos....
+                </div>
+            </div>
+            <h4 class="muted">Playlist</h4>
+            <hr>
+            <ul id="tube-playlist" class="playlist">
+            </ul>
+        </div>
+        <div class="span5 left-block">
+            <div class="search-block" id="tube-search">
+                <form class="form-search" id="tube-search-form" >
+                    <input type="text" class="input-medium search-query" id="tube-search-query" placeholder="Search">
+                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+                </form>
+                <ul id="tube-search-results" class="result">
+
+                </ul>
+                <div class="more">
+                    <button class="btn">More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Templates
+================================================== -->
+<script type="text/html" id="tube-template-video-search">
+    <li class="video media" data-video-id="{{video_id}}">
+        <a class="thumb pull-left">
+            <img class="media-object" src="{{thumb_url}}">
+            <span class="duration">{{tube.parseDuration(duration)}}</span>
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">{{title}}</h4>
+            <span class="by">by {{author_name}}</span>
+            <span class="view_count">{{view_count}}</span>
+        </div>
+    </li>
+</script>
+<script type="text/html" id="tube-template-video">
+        <a class="thumb pull-left">
+            <img class="media-object" src="{{thumb_url}}">
+            <span class="duration">{{tube.parseDuration(duration)}}</span>
+        </a>
+        <a href="#remove-video" class="remove pull-right"><i class="icon-remove"></i></a>
+        <div class="media-body">
+            <h4 class="media-heading">{{title}}</h4>
+            <span class="by">by {{author_name}}</span>
+            <span class="view_count">{{view_count}}</span>
+            <a href="#" class="related">Related</a>
+        </div>
+</script>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/swfobject.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="assets/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/underscore-min.js"></script>
+<script src="assets/js/backbone-min.js"></script>
+<script src="assets/js/backbone-localstorage.js"></script>
+<script src="assets/js/tube.js"></script>
+
+
+
+</body>
+</html>

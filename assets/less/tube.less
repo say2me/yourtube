@@ -1,0 +1,66 @@
+// Vasenin.com/tube less css file
+// (c)2013 copyright vasenin.com
+
+body {
+    padding-top: 0;
+}
+
+.search-block, {
+    .form-search {
+        .search-query {
+            width: 200px;
+        }
+    }
+    .result {
+        margin: 0;
+    }
+    .more {
+        display: none;
+    }
+}
+.playlist {
+    margin: 0;
+}
+
+.video {
+    &.playing {
+        background: #CCFFCC;
+    }
+    &.added {
+        opacity: 0.6;
+    }
+    &:hover {
+        background-color: #f7f7f8;
+        .remove {
+            display: block;
+        }
+    }
+    .remove {
+        display: none;
+    }
+    img {
+        cursor: pointer;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 14px;
+        cursor: pointer;
+    }
+    .by,.view_count {
+        color: #7c7c7c;
+        font-size: 11px;
+        line-height: 16px;
+        display: block;
+    }
+    .thumb {
+        position: relative;
+        .duration {
+            top: 68px;
+            background: #000;
+            color: #FFF;
+            padding: 2px;
+            position: absolute;
+            font-size: 12px;
+        }
+    }
+}
