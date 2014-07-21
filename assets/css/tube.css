@@ -5,13 +5,15 @@ body {
   width: 200px;
 }
 .search-block .result {
-  margin: 0;
+  margin: 10px 0;
+  padding: 0;
 }
 .search-block .more {
   display: none;
 }
 .playlist {
   margin: 0;
+  padding: 0;
 }
 .video.playing {
   background: #CCFFCC;
@@ -53,4 +55,7 @@ body {
   padding: 2px;
   position: absolute;
   font-size: 12px;
+}
+.footer {
+  margin-top: 10px;
 }
