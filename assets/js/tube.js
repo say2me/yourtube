@@ -309,7 +309,7 @@ var tube = {
             tube.playlist.on('reset', this.allVideo, this);
         },
         render: function() {
-            tube.playlist.fetch({reset: true});
+            tube.playlist.fetch();
         },
         allVideo: function(models) {
             models.each(function(model){
