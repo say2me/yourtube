@@ -5,7 +5,8 @@ body {
   width: 200px;
 }
 .search-block .result {
-  margin: 0;
+  margin: 10px 0;
+  padding: 0;
 }
 .search-block .more {
   display: none;
