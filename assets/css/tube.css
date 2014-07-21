@@ -12,6 +12,7 @@ body {
 }
 .playlist {
   margin: 0;
+  padding: 0;
 }
 .video.playing {
   background: #CCFFCC;

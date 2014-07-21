@@ -9,13 +9,13 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
         }
     </style>
-    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap3/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="assets/css/tube.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -38,7 +38,7 @@
     </div>
     <hr>
     <div class="row-fluid">
-        <div class="span7 right-block">
+        <div class="col-md-7 right-block">
             <div class="player-block" id="tube-player">
                 <div id="ytapiplayer">
                     Waiting for videos....
@@ -49,11 +49,13 @@
             <ul id="tube-playlist" class="playlist">
             </ul>
         </div>
-        <div class="span5 left-block">
+        <div class="col-md-5 left-block">
             <div class="search-block" id="tube-search">
-                <form class="form-search" id="tube-search-form" >
-                    <input type="text" class="input-medium search-query" id="tube-search-query" placeholder="Search">
-                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+                <form class="form-search form-inline" id="tube-search-form" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control search-query" id="tube-search-query" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
                 </form>
                 <ul id="tube-search-results" class="result">
 
@@ -85,7 +87,7 @@
             <img class="media-object" src="{{thumb_url}}">
             <span class="duration">{{tube.parseDuration(duration)}}</span>
         </a>
-        <a href="#remove-video" class="remove pull-right"><i class="icon-remove"></i></a>
+        <a href="#remove-video" class="remove pull-right"><span class="glyphicon glyphicon-remove"></span></a>
         <div class="media-body">
             <h4 class="media-heading">{{title}}</h4>
             <span class="by">by {{author_name}}</span>
@@ -99,7 +101,7 @@
 <script src="assets/js/swfobject.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="assets/js/jquery-ui-1.10.2.custom.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/lib/bootstrap3/dist/js/bootstrap.min.js"></script>
 <script src="assets/js/underscore-min.js"></script>
 <script src="assets/js/backbone-min.js"></script>
 <script src="assets/js/backbone-localstorage.js"></script>
